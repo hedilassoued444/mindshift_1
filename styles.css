@@ -1,0 +1,121 @@
+/* General styling */
+body {
+    font-family: 'Poppins', sans-serif; /* Use a modern font */
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #2196f3, #60E2F3); /* Blue gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Sign-in container */
+.login-container {
+    background-color: #ffffff;
+    padding: 30px 35px;
+    border-radius: 12px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    transform: scale(0.9); /* Initial smaller scale for animation */
+    animation: fadeIn 0.5s ease-out forwards; /* Animation for fade-in effect */
+}
+
+/* Animation for fade-in */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: scale(0.9); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+/* Form styling */
+.login-form h2 {
+    text-align: center;
+    color: #333;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    animation: slideDown 0.5s ease-out forwards; /* Slide down animation for the title */
+}
+
+@keyframes slideDown {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Input field styling */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f7f7f7;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Input focus state */
+.input-group input:focus {
+    border-color: #2196f3;
+    background-color: #e0f7ff; /* Light blue background on focus */
+    outline: none;
+    box-shadow: 0 0 6px rgba(0, 97, 242, 0.3);
+}
+
+/* Sign-in button */
+.login-btn {
+    width: 100%;
+    background-color: #2196f3; /* Primary blue color */
+    color: #fff;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 97, 242, 0.2);
+    margin-top: 15px;
+}
+
+/* Button hover effect */
+.login-btn:hover {
+    background-color: #004abf; /* Darker blue on hover */
+    transform: translateY(-2px);
+}
+
+/* Button active state */
+.login-btn:active {
+    transform: translateY(1px); /* Slight push effect */
+}
+
+/* Additional links */
+.additional-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.additional-links a {
+    font-size: 14px;
+    color: #2196f3;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+.additional-links a:hover {
+    color: #004abf;
+    text-decoration: underline;
+}
